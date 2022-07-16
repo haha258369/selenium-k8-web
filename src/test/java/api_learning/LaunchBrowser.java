@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class LaunchBrowser {
 
     public static void main(String[] args) {
+
+        // Setting chrome driver
         String currentProjectLocation = System.getProperty("user.dir");
         String chromeDriverLocation = "";
         if (OS.isFamilyWindows()){
@@ -19,7 +21,6 @@ public class LaunchBrowser {
         }
 
         System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
-
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--incognito");
 
@@ -34,6 +35,7 @@ public class LaunchBrowser {
             e.printStackTrace();
         }
 
+        // Quit browser session
         webDriver.quit();
     }
 }
