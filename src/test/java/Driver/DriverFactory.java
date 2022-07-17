@@ -1,15 +1,14 @@
-package api_learning;
+package Driver;
 
 import org.apache.commons.exec.OS;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import java.time.Duration;
 
-public class LaunchBrowser {
+public class DriverFactory {
 
-    public static void main(String[] args) {
-
-        // Setting chrome driver
+    public static WebDriver getChromeDriver() {
         String currentProjectLocation = System.getProperty("user.dir");
         String chromeDriverLocation = "";
         if (OS.isFamilyWindows()){
@@ -23,21 +22,12 @@ public class LaunchBrowser {
         System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--incognito");
+
         WebDriver webDriver = new ChromeDriver(chromeOptions);
 
-        // Interaction
-        webDriver.manage().window().maximize();
-        webDriver.get("https://google.com");
+        //Implicit wait (for findElement)
+        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
-        // For debugging
-        try {
-            Thread.sleep(2000);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-
-        // Quit browser session
-        webDriver.quit();
+        return webDriver;
     }
 }
-
