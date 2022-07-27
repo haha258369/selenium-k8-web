@@ -1,4 +1,4 @@
-package Driver;
+package driver;
 
 import org.apache.commons.exec.OS;
 import org.openqa.selenium.WebDriver;

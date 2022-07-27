@@ -1,6 +1,6 @@
 package api_learning;
 
-import Driver.DriverFactory;
+import driver.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,52 +11,52 @@ public class FormInteraction {
 
     public static void main(String[] args) {
 
-        //Get a chrome session
+        // Get a chrome session
         WebDriver webDriver = DriverFactory.getChromeDriver();
 
         try {
-            //Navigate to the target page
+            // Navigate to the target page
             webDriver.get("https://the-internet.herokuapp.com/login");
 
-            //Define selectors' values
+            // Define selectors' values
             By userNameSelector = By.id("username");
             By passwordSelector = By.cssSelector("#password");
             By loginBtnSelector = By.cssSelector("[type='submit']");
 
-            //Find elements
+            // Find elements
             WebElement userNameElem = webDriver.findElement(userNameSelector);
             WebElement passwordElem = webDriver.findElement(passwordSelector);
             WebElement loginBtnElem = webDriver.findElement(loginBtnSelector);
 
-            //Interaction
+            // interaction
             userNameElem.sendKeys("tomsmith");
             passwordElem.sendKeys("SuperSecretPassword!");
             loginBtnElem.click();
             Thread.sleep(2000);
 
-            //Back to previous page
+            // Back to previous page
             webDriver.navigate().back();
 
-            //Refresh page
+            // Refresh page
             webDriver.navigate().refresh();
 
-            //Re-interact with the elements
-            //Redefine values
+            // Re-interact with the elements
+            // Redefine values
             userNameElem = webDriver.findElement(userNameSelector);
             passwordElem = webDriver.findElement(passwordSelector);
             loginBtnElem = webDriver.findElement(loginBtnSelector);
 
-            //Get attribute value
+            // Get attribute value
             System.out.println("Login button type: " + loginBtnElem.getAttribute("type"));
             System.out.println("Background color of login button: " + loginBtnElem.getCssValue("background-color"));
 
-            //Interaction
+            // Interaction
             userNameElem.sendKeys("tom");
             passwordElem.sendKeys("123456");
             loginBtnElem.click();
             Thread.sleep(2000);
 
-            //Use of findElements
+            // Use of findElements
             By loginInputFieldSelectors = By.tagName("input");
             List<WebElement> loginFormFieldsElem = webDriver.findElements(loginInputFieldSelectors);
 
@@ -67,24 +67,24 @@ public class FormInteraction {
             loginFormFieldsElem.get(PASSWORD_INDEX).sendKeys("123456");
             Thread.sleep(2000);
 
-            //Find element by linkText
+            // Find element by linkText
             By poweredByLinkTextSelector = By.linkText("Elemental Selenium");
             WebElement poweredByLinkTextElem = webDriver.findElement(poweredByLinkTextSelector);
             poweredByLinkTextElem.click();
 
-            //Get page title and current url
+            // Get page title and current url
             System.out.println(webDriver.getTitle());
             System.out.println(webDriver.getCurrentUrl());
 
 
-            //For debugging
+            // For debugging
             Thread.sleep(5000);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        //Quit session
+        // Quit session
         webDriver.quit();
 
     }
