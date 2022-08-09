@@ -1,12 +1,12 @@
-package components;
+package models.components;
 
-import models.components.ComponentCssSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.time.Duration;
 import java.util.Arrays;
@@ -17,12 +17,16 @@ public class Component {
 
     protected WebDriver driver;
     protected WebElement component;
-    protected WebDriverWait wait;
+    public WebDriverWait wait;
 
     public Component(WebDriver driver, WebElement component) {
         this.driver = driver;
         this.component = component;
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(15));
+    }
+
+    public WebElement getComponent() {
+        return component;
     }
 
     public WebElement findElement(By by){
@@ -33,18 +37,21 @@ public class Component {
         return component.findElements(by);
     }
 
+    public<T extends Component> T findComponent(Class<T> componentClass, WebDriver driver){
+        return findComponents(componentClass, driver).get(0);
+    }
+
     public <T extends Component> List<T> findComponents(Class<T> componentClass,WebDriver driver){
 
         //Get component selector
-        String cssSelector;
-
+        By componentSelector;
         try {
-            cssSelector = componentClass.getAnnotation(ComponentCssSelector.class).value();
+            componentSelector = getCompSelector(componentClass);
         } catch (Exception e){
             throw new IllegalArgumentException("[ERR] The component must have a css selector!");
         }
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(cssSelector)));
-        List<WebElement> results = component.findElements(By.cssSelector(cssSelector));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(componentSelector));
+        List<WebElement> results = component.findElements(componentSelector);
 
         //Define component class constructor parameters
         Class<?>[] params = new Class[]{WebDriver.class, WebElement.class};
@@ -69,7 +76,16 @@ public class Component {
         return components;
     }
 
-    public<T extends Component> T findComponent(Class<T> componentClass, WebDriver driver){
-        return findComponents(componentClass, driver).get(0);
+    private By getCompSelector(Class<? extends Component> componentClass) {
+
+        if (componentClass.isAnnotationPresent(ComponentCssSelector.class)) {
+            return By.cssSelector(componentClass.getAnnotation(ComponentCssSelector.class).value());
+        } else if (componentClass.isAnnotationPresent(ComponentXpathSelector.class)) {
+            return By.xpath(componentClass.getAnnotation(ComponentXpathSelector.class).value());
+        } else {
+            throw new IllegalArgumentException("Component class " + componentClass + "must have an annotation "
+            + ComponentCssSelector.class.getSimpleName() + " or " + ComponentXpathSelector.class.getSimpleName());
+        }
     }
+
 }

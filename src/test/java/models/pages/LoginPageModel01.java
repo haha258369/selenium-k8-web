@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
+public class LoginPageModel01 {
 
     private final WebDriver webDriver;
     // Define Selectors
@@ -12,7 +12,7 @@ public class LoginPage {
     private final static By passwordSelector = By.cssSelector("#password");
     private final By loginBtnSelector = By.cssSelector("[type=\"submit\"]");
 
-    public LoginPage(WebDriver webDriver) {
+    public LoginPageModel01(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 

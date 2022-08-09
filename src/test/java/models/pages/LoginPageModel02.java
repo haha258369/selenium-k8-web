@@ -2,32 +2,29 @@ package models.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-public class LoginPageModel01 {
+public class LoginPageModel02 {
 
-    private final WebDriver webDriver;
-    // Define Selectors
+    // Define selectors
     private final static By usernameSelector = By.id("username");
     private final static By passwordSelector = By.cssSelector("#password");
-    private final By loginBtnSelector = By.cssSelector("[type=\"submit\"]");
+    private final static By loginBtnSelector = By.cssSelector("[type=\"submit\"]");
 
-    public LoginPageModel01(WebDriver webDriver) {
+    private final WebDriver webDriver;
+
+    public LoginPageModel02(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
-    // Define element getters
-    public WebElement username(){
-        return webDriver.findElement(usernameSelector);
+    public void inputUsername(String usernameText){
+        webDriver.findElement(usernameSelector).sendKeys(usernameText);
     }
 
-    public WebElement password(){
-        return webDriver.findElement(passwordSelector);
+    public void inputPassword(String passwordText){
+        webDriver.findElement(passwordSelector).sendKeys(passwordText);
     }
 
-    public WebElement loginBtn(){
-        return webDriver.findElement(loginBtnSelector);
+    public void clickOnLoginBtn(){
+        webDriver.findElement(loginBtnSelector).click();
     }
-
-
 }

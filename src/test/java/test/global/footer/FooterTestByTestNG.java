@@ -1,58 +1,44 @@
 package test.global.footer;
 
-import driver.DriverFactory;
 import models.components.global.footer.*;
 import models.pages.BasePage;
-import models.pages.CategoryPage;
-import models.pages.HomePage;
-import models.pages.RegisterPage;
-import models.pages.LoginPage;
-import org.openqa.selenium.WebDriver;
-import url.Urls;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
-public class FooterTest {
+public class FooterTestByTestNG {
 
-    public static void main(String[] args) {
+    @Test(priority = 2)
+    public void testFooterHomePage() {
+        String actualResult = "aaa";
+        String expectedResult = "bbb";
+//        Verifier.verifyEquals(actualResult, expectedResult);
 
-        WebDriver driver = DriverFactory.getChromeDriver();
-        driver.get(Urls.demoBaseUrl);
-
-        try {
-            testFooterHomePage(driver);
-            testFooterCategoryPage(driver);
-            testFooterRegisterPage(driver);
-            testFooterLoginPage(driver);
-
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-
-        driver.quit();
+        Assert.assertTrue(actualResult.equals(expectedResult), "[ERR] They are different!");
+        Assert.assertFalse(actualResult.equals(expectedResult), "[ERR] They are different");
+        Assert.assertEquals(actualResult, expectedResult, "[ERR] Message is incorrect!");
+        Assert.fail();
+        Assert.fail("[ERR]");
     }
 
-    private static void testFooterHomePage(WebDriver driver) {
-        System.out.println("Home Page");
-        HomePage homePage = new HomePage(driver);
-        testPageFooter(homePage);
+    @Test(priority = 1)
+    public void testFooterCategoryPage() {
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(1,2);
+        softAssert.assertEquals(2,2);
+        softAssert.assertEquals(2,3);
 
+//        softAssert.assertAll();
+
+        System.out.println("Hello");
     }
 
-    private static void testFooterCategoryPage(WebDriver driver) {
-        System.out.println("Category Page");
-        CategoryPage categoryPage = new CategoryPage(driver);
-        testPageFooter(categoryPage);
+    @Test
+    public void testFooterRegisterPage() {
     }
 
-    private static void testFooterRegisterPage(WebDriver driver) {
-        System.out.println("Register Page");
-        RegisterPage registerPage = new RegisterPage(driver);
-        testPageFooter(registerPage);
-    }
-
-    private static void testFooterLoginPage(WebDriver driver) {
-        System.out.println("Login Page");
-        LoginPage loginPage = new LoginPage(driver);
-        testPageFooter(loginPage);
+    @Test
+    public void testFooterLoginPage() {
     }
 
     private static void testFooterColumn(FooterColumnComponent footerColumnComp) {

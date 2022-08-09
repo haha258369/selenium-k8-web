@@ -1,2 +1,21 @@
-package models.components.product;public class ProductItemComponent {
+package models.components.product;
+
+import models.components.Component;
+import models.components.ComponentCssSelector;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+@ComponentCssSelector(value = ".product-item")
+public class ProductItemComponent extends Component {
+
+    public ProductItemComponent(WebDriver driver, WebElement component) {
+        super(driver, component);
+    }
+
+    private static final By productTittleSelector = By.cssSelector(".product-title");
+
+    public WebElement productTittleElem(){
+        return component.findElement(productTittleSelector);
+    }
 }

@@ -4,10 +4,10 @@ import models.components.ComponentCssSelector;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-@ComponentCssSelector(value = ".column.information")
-public class InformationColumnComponent extends FooterColumnComponent{
+@ComponentCssSelector(value = ".column.customer-service")
+public class CustomerServiceColumnComponent extends FooterColumnComponent{
 
-    public InformationColumnComponent(WebDriver driver, WebElement component) {
+    public CustomerServiceColumnComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
 }

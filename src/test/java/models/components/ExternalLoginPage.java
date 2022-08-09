@@ -1,18 +1,18 @@
 package models.components;
 
-public class InternalLoginPage extends LoginPage{
+public class ExternalLoginPage extends LoginPage{
     @Override
     public String username() {
-        return "InternalLoginPage | username";
+        return "ExternalLoginPage | username";
     }
 
     @Override
     public String password() {
-        return "InternalLoginPage | password";
+        return "ExternalLoginPage | password";
     }
 
     @Override
     public String loginBtn() {
-        return "InternalLoginPage | loginBtn";
+        return "ExternalLoginPage | loginBtn";
     }
 }

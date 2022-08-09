@@ -2,15 +2,14 @@ package test.global.footer;
 
 import driver.DriverFactory;
 import models.components.global.footer.*;
-import models.pages.BasePage;
-import models.pages.CategoryPage;
-import models.pages.HomePage;
-import models.pages.RegisterPage;
-import models.pages.LoginPage;
+import models.components.product.ProductItemComponent;
+import models.pages.*;
 import org.openqa.selenium.WebDriver;
 import url.Urls;
 
-public class FooterTest {
+import java.util.List;
+
+public class FeaturedProductTest {
 
     public static void main(String[] args) {
 
@@ -18,11 +17,7 @@ public class FooterTest {
         driver.get(Urls.demoBaseUrl);
 
         try {
-            testFooterHomePage(driver);
-            testFooterCategoryPage(driver);
-            testFooterRegisterPage(driver);
-            testFooterLoginPage(driver);
-
+            testFeaturedProductHomePage(driver);
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -30,57 +25,16 @@ public class FooterTest {
         driver.quit();
     }
 
-    private static void testFooterHomePage(WebDriver driver) {
-        System.out.println("Home Page");
+    private static void testFeaturedProductHomePage(WebDriver driver) {
+
         HomePage homePage = new HomePage(driver);
-        testPageFooter(homePage);
 
-    }
+        List<ProductItemComponent> productItemComps =
+                homePage.productGridComp().productItemComps();
 
-    private static void testFooterCategoryPage(WebDriver driver) {
-        System.out.println("Category Page");
-        CategoryPage categoryPage = new CategoryPage(driver);
-        testPageFooter(categoryPage);
-    }
-
-    private static void testFooterRegisterPage(WebDriver driver) {
-        System.out.println("Register Page");
-        RegisterPage registerPage = new RegisterPage(driver);
-        testPageFooter(registerPage);
-    }
-
-    private static void testFooterLoginPage(WebDriver driver) {
-        System.out.println("Login Page");
-        LoginPage loginPage = new LoginPage(driver);
-        testPageFooter(loginPage);
-    }
-
-    private static void testFooterColumn(FooterColumnComponent footerColumnComp) {
-        System.out.println(footerColumnComp.headerElem().getText());
-        footerColumnComp.linksElem().forEach(link -> {
-            System.out.println(link.getText());
-            System.out.println(link.getAttribute("href"));
+        productItemComps.forEach(productItemComp -> {
+            System.out.println(productItemComp.productTittleElem().getText());
         });
-    }
-
-    private static void testPageFooter(BasePage basePage) {
-
-        InformationColumnComponent informationColumnComp =
-                basePage.footerComp().informationColumnComp();
-
-        CustomerServiceColumnComponent customerServiceColumnComp =
-                basePage.footerComp().customerServiceColumnComp();
-
-        MyAccountColumnComponent myAccountColumnComp =
-                basePage.footerComp().myAccountColumnComp();
-
-        FollowUsColumnComponent followUsColumnComp =
-                basePage.footerComp().followUsColumnComp();
-
-        testFooterColumn(informationColumnComp);
-        testFooterColumn(customerServiceColumnComp);
-        testFooterColumn(myAccountColumnComp);
-        testFooterColumn(followUsColumnComp);
     }
 
 }

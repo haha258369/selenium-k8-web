@@ -2,9 +2,9 @@ package models.pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class HomePage extends BasePage{
+public class CategoryPage extends BasePage{
 
-    public HomePage(WebDriver driver) {
+    public CategoryPage(WebDriver driver) {
         super(driver);
     }
 }
