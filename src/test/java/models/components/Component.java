@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.time.Duration;
 import java.util.Arrays;
@@ -46,7 +45,7 @@ public class Component {
         //Get component selector
         By componentSelector;
         try {
-            componentSelector = getCompSelector(componentClass);
+            componentSelector = getComponentSelector(componentClass);
         } catch (Exception e){
             throw new IllegalArgumentException("[ERR] The component must have a css selector!");
         }
@@ -76,7 +75,7 @@ public class Component {
         return components;
     }
 
-    private By getCompSelector(Class<? extends Component> componentClass) {
+    private By getComponentSelector(Class<? extends Component> componentClass) {
 
         if (componentClass.isAnnotationPresent(ComponentCssSelector.class)) {
             return By.cssSelector(componentClass.getAnnotation(ComponentCssSelector.class).value());

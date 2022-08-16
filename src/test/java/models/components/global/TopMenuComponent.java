@@ -38,4 +38,12 @@ public class TopMenuComponent extends Component {
             return component.findElement(By.tagName("a"));
         }
     }
+
+    @ComponentCssSelector(".sublist li a")
+    public static class CategoryItemComponent extends Component {
+
+        public CategoryItemComponent(WebDriver driver, WebElement component) {
+            super(driver, component);
+        }
+    }
 }

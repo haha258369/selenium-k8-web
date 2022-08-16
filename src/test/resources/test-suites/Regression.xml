@@ -3,7 +3,7 @@
 <suite name="Regression Test" verbose="1" >
     <test name="Footer Test" >
         <classes>
-            <class name="test.global.footer.FooterTest" />
+            <class name="test.global.footer.FooterTestLab22" />
         </classes>
     </test>
 

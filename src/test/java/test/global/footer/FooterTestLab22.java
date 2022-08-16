@@ -1,70 +1,39 @@
 package test.global.footer;
 
-import driver.DriverFactory;
-import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.BaseTest;
 import test_flows.global.FooterTestFlow;
 import url.Urls;
 
-public class FooterTestLab22 implements Urls {
+public class FooterTestLab22 extends BaseTest {
 
     @Test
     public void testFooterCategoryPage() {
-        WebDriver driver = DriverFactory.getChromeDriver();
-
-        try {
-            driver.get(demoBaseUrl);
-            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
-            footerTestFlow.verifyProductCategoryFooterComponent();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            driver.quit();
-        }
+        driver.get(Urls.demoBaseUrl);
+        FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+        footerTestFlow.verifyProductCategoryFooterComponent();
+        Assert.fail("It's a test!");
     }
 
     @Test
     public void testFooterHomePage() {
-        WebDriver driver = DriverFactory.getChromeDriver();
-
-        try {
-            driver.get(demoBaseUrl);
-            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
-            footerTestFlow.verifyFooterComponent();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            driver.quit();
-        }
+        driver.get(Urls.demoBaseUrl);
+        FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+        footerTestFlow.verifyFooterComponent();
     }
 
     @Test
     public void testFooterRegisterPage() {
-        WebDriver driver = DriverFactory.getChromeDriver();
-
-        try {
-            driver.get(demoBaseUrl + registerSlug);
-            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
-            footerTestFlow.verifyFooterComponent();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            driver.quit();
-        }
+        driver.get(Urls.demoBaseUrl + Urls.registerSlug);
+        FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+        footerTestFlow.verifyFooterComponent();
     }
 
     @Test
     public void testFooterLoginPage() {
-        WebDriver driver = DriverFactory.getChromeDriver();
-
-        try {
-            driver.get(demoBaseUrl + loginSlug);
-            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
-            footerTestFlow.verifyFooterComponent();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            driver.quit();
-        }
+        driver.get(Urls.demoBaseUrl + Urls.loginSlug);
+        FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+        footerTestFlow.verifyFooterComponent();
     }
 }

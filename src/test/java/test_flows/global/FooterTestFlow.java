@@ -1,8 +1,8 @@
 package test_flows.global;
 
-import models.components.global.CategoryItemComponent;
 import models.components.global.TopMenuComponent;
 import static models.components.global.TopMenuComponent.MainCategoryItem;
+import static models.components.global.TopMenuComponent.CategoryItemComponent;
 import models.components.global.footer.FooterColumnComponent;
 import models.components.global.footer.FooterComponent;
 import models.pages.BasePage;
@@ -10,12 +10,10 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import url.Urls;
 
 import java.security.SecureRandom;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -120,6 +118,7 @@ public class FooterTestFlow {
 
     public void verifyProductCategoryFooterComponent() {
 
+        // From top menu
         // Random pickup an item on main list
         BasePage basePage = new BasePage(driver);
         TopMenuComponent topMenuComp = basePage.topMenuComp();

@@ -1,4 +1,7 @@
-package models.components;
+package api_learning;
+
+import models.components.ComponentCssSelector;
+import models.components.LoginFormComponent;
 
 public class AnnotationTest {
 
