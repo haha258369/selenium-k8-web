@@ -24,7 +24,7 @@ public class ComputerData {
         return ram;
     }
 
-    public String getOs() {
+    public String getOS() {
         return os;
     }
 

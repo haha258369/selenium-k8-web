@@ -17,12 +17,13 @@ public class BuyingStandardComputerTest extends BaseTest implements Urls {
         OrderComputerFlow<StandardComputerComponent> orderComputerFlow =
                 new OrderComputerFlow<>(driver, StandardComputerComponent.class, computerData);
         orderComputerFlow.buildComputerSpec();
-        orderComputerFlow.addToCart();
+        orderComputerFlow.addToCartAndNavigateToShoppingCartPage();
+        orderComputerFlow.verifyShoppingCartPage();
     }
 
     @DataProvider
     public ComputerData[] computerData() {
-        String fileLocation = "/src/test/java/test/computer/BuyingStandardComputerTest.java";
+        String fileLocation = "/src/test/java/test_data/computer/StandardComputerData.json";
         return DataObjectBuilder.buildDataObjectFrom(fileLocation, ComputerData[].class);
     }
 }

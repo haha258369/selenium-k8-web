@@ -1,21 +1,16 @@
 package models.components.order;
 
-import models.components.Component;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public abstract class ComputerEssentialComponent extends Component {
+public abstract class ComputerEssentialComponent extends BaseItemDetailComponent {
 
-    public ComputerEssentialComponent(WebDriver driver, WebElement component) {
-        super(driver, component);
-    }
-
+    private final static By allOptionsSelector = By.cssSelector(".option-list input");
     public abstract String selectProcessorType(String type);
-    public abstract String selectRAMType(String type);
-
+    public abstract String selectRamType(String type);
     public String selectHDD(String type) {
         return selectComputerOption(type);
     }
@@ -23,34 +18,35 @@ public abstract class ComputerEssentialComponent extends Component {
     public String selectOS(String type) {
         return selectComputerOption(type);
     }
+    public String selectSoftware(String type) {
+        return selectComputerOption(type);
+    }
+
+    public ComputerEssentialComponent(WebDriver driver, WebElement component) {
+        super(driver, component);
+    }
+
+    public void unselectDefaultOptions() {
+        List<WebElement> allOptionElems = component.findElements(allOptionsSelector);
+        allOptionElems.forEach(option -> {
+            if (option.getAttribute("checked") != null) {
+                option.click();
+            }
+        });
+    }
 
     protected String selectComputerOption(String type) {
-        String selectorString = "//label[contains(text(),\""+ type + "\")]";
+        String selectorString = "//label[contains(text(),\"" + type + "\")]";
         By optionSelector = By.xpath(selectorString);
 
-        // Cach 1
-/*        WebElement optionElem = null;
-
-        try {
-            optionElem = component.findElement(optionSelector);
-        } catch (Exception ignore) {}
-
-        if (optionElem != null) {
-            optionElem.click();
-            return optionElem.getText();
-        } else {
-            throw new RuntimeException("[ERR1] The option " + type + " is not existing!");
-        }*/
-
-        // Cach 2
         List<WebElement> optionElems = component.findElements(optionSelector);
         if (!optionElems.isEmpty()) {
             WebElement chosenOption = optionElems.get(0);
             chosenOption.click();
             return chosenOption.getText();
         } else {
-            throw new RuntimeException("[ERR1] The option " + type + " is not existing!");
+            throw new RuntimeException("[ERR] The option " + type + " is not existing.");
         }
-
     }
 }
+

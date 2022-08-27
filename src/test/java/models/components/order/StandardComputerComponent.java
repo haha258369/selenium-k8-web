@@ -25,7 +25,7 @@ public class StandardComputerComponent extends ComputerEssentialComponent{
     }
 
     @Override
-    public String selectRAMType(String type) {
+    public String selectRamType(String type) {
         final int RAM_DROPDOWN_INDEX = 1;
         WebElement ramDropdownElem = component.findElements(productAttributeSelector).get(RAM_DROPDOWN_INDEX);
         return selectOption(ramDropdownElem, type);
