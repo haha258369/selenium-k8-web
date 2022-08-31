@@ -22,7 +22,7 @@ public class CartItemRowComponent extends Component {
     }
 
     public double quantity() {
-        return getValue(quantityInputSelector);
+        return Double.parseDouble(component.findElement(quantityInputSelector).getAttribute("value").trim());
     }
 
     public double subTotal() {

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import test.BaseTest;
 import test_data.ComputerData;
 import test_data.DataObjectBuilder;
+import test_data.PaymentMethod;
 import test_flows.computer.OrderComputerFlow;
 import url.Urls;
 
@@ -16,9 +17,17 @@ public class BuyingStandardComputerTest extends BaseTest implements Urls {
         driver.get(demoBaseUrl.concat(standardComputer));
         OrderComputerFlow<StandardComputerComponent> orderComputerFlow =
                 new OrderComputerFlow<>(driver, StandardComputerComponent.class, computerData);
-        orderComputerFlow.buildComputerSpec();
-        orderComputerFlow.addToCartAndNavigateToShoppingCartPage();
-        orderComputerFlow.verifyShoppingCartPage();
+        orderComputerFlow
+                .buildComputerSpec()
+                .addToCartAndNavigateToShoppingCartPage()
+                .verifyShoppingCartPage()
+                .agreeTOSAndCheckout()
+                .inputBillingAddress()
+                .inputShippingAddress()
+                .selectShippingMethod()
+                .selectPaymentMethod(PaymentMethod.PURCHASE_ORDER)
+                .inputPaymentInfo()
+                .confirmOrder();
     }
 
     @DataProvider

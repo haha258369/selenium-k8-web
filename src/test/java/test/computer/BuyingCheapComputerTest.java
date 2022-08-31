@@ -16,9 +16,17 @@ public class BuyingCheapComputerTest extends BaseTest implements Urls {
         driver.get(demoBaseUrl.concat(cheapComputer));
         OrderComputerFlow<CheapComputerComponent> orderComputerFlow =
                 new OrderComputerFlow<>(driver, CheapComputerComponent.class, computerData);
-        orderComputerFlow.buildComputerSpec();
-        orderComputerFlow.addToCartAndNavigateToShoppingCartPage();
-        orderComputerFlow.verifyShoppingCartPage();
+        orderComputerFlow
+                .buildComputerSpec()
+                .addToCartAndNavigateToShoppingCartPage()
+                .verifyShoppingCartPage()
+                .agreeTOSAndCheckout()
+                .inputBillingAddress()
+                .inputShippingAddress()
+                .selectShippingMethod()
+                .selectPaymentMethod()
+                .inputPaymentInfo()
+                .confirmOrder();
     }
 
     @DataProvider

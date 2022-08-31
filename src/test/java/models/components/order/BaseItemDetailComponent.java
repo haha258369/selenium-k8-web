@@ -31,7 +31,8 @@ public class BaseItemDetailComponent extends Component {
         return Double.parseDouble(productPriceText);
     }
 
-    public void clickOnAddToCartBtn() {
+    public BaseItemDetailComponent clickOnAddToCartBtn() {
         component.findElement(addToCartBtnSelector).click();
+        return this;
     }
 }

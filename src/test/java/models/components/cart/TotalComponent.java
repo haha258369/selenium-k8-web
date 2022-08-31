@@ -16,6 +16,8 @@ public class TotalComponent extends Component {
     private final static By priceTableRowSelector = By.cssSelector("table tr");
     private final static By priceTypeSelector = By.cssSelector(".cart-total-left");
     private final static By priceValueSelector = By.cssSelector(".cart-total-right");
+    private final static By termsSelector = By.cssSelector("#termsofservice");
+    private final static By checkoutBtnSelector = By.cssSelector("#checkout");
 
     public TotalComponent(WebDriver driver, WebElement component) {
         super(driver, component);
@@ -32,5 +34,14 @@ public class TotalComponent extends Component {
             priceCategories.put(priceType, priceValue);
         }
         return priceCategories;
+    }
+
+    public TotalComponent agreeTerms() {
+        component.findElement(termsSelector).click();
+        return this;
+    }
+
+    public void clickOnCheckoutBtn() {
+        component.findElement(checkoutBtnSelector).click();
     }
 }
