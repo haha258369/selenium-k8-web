@@ -1,7 +1,11 @@
 package models.pages;
 
+import models.components.cart.CartItemRowComponent;
+import models.components.cart.TotalComponent;
 import models.components.checkout.*;
 import org.openqa.selenium.WebDriver;
+
+import java.util.List;
 
 public class CheckoutPage extends BasePage{
 

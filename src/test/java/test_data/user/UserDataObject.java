@@ -12,6 +12,10 @@ public class UserDataObject {
     private String city;
     private String zipCode;
     private String phoneNum;
+    private String visa;
+    private String mastercard;
+    private String discover;
+    private String amex;
 
     public String getFirstname() {
         return firstname;
@@ -51,5 +55,21 @@ public class UserDataObject {
 
     public String getPhoneNum() {
         return phoneNum;
+    }
+
+    public String getVisa() {
+        return visa;
+    }
+
+    public String getMastercard() {
+        return mastercard;
+    }
+
+    public String getDiscover() {
+        return discover;
+    }
+
+    public String getAmex() {
+        return amex;
     }
 }

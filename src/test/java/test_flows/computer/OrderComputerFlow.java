@@ -2,39 +2,32 @@ package test_flows.computer;
 
 import models.components.cart.CartItemRowComponent;
 import models.components.cart.TotalComponent;
-import models.components.checkout.BillingAddressComponent;
-import models.components.checkout.PaymentMethodComponent;
-import models.components.checkout.ShippingAddressComponent;
-import models.components.checkout.ShippingMethodComponent;
+import models.components.checkout.*;
 import models.components.order.ComputerEssentialComponent;
-import models.pages.CheckoutOptionsPage;
-import models.pages.CheckoutPage;
-import models.pages.ComputerItemDetailPage;
-import models.pages.ShoppingCartPage;
+import models.pages.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import test_data.ComputerData;
+import test_data.CreditCardType;
 import test_data.DataObjectBuilder;
 import test_data.PaymentMethod;
 import test_data.user.UserDataObject;
 
 import java.security.SecureRandom;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class OrderComputerFlow <T extends ComputerEssentialComponent> {
+public class OrderComputerFlow<T extends ComputerEssentialComponent> {
 
-    private final WebDriver driver;
+    private static WebDriver driver;
     private final Class<T> computerEssentialComponent;
     private final ComputerData computerData;
     private final int quantity;
     private double totalItemPrice;
     private UserDataObject defaultCheckoutUser;
     private PaymentMethod paymentMethod;
+    private CreditCardType creditCardType;
 
     public OrderComputerFlow(WebDriver driver, Class<T> computerEssentialComp, ComputerData computerData) {
         this.driver = driver;
@@ -121,39 +114,19 @@ public class OrderComputerFlow <T extends ComputerEssentialComponent> {
 
     public OrderComputerFlow verifyShoppingCartPage() {
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
-        List<CartItemRowComponent> cartItemRowComps = shoppingCartPage.cartItemRowComponents();
-        if (cartItemRowComps.isEmpty()) {
-            Assert.fail("[ERR] There is no item display in the shopping cart.");
-        }
+        List<CartItemRowComponent> cartItemRowComps = isItemDisplay(shoppingCartPage);
 
         // Verify sub-total
         double currentSubTotal = 0;
         double currentTotalUnitPrices = 0;
         for (CartItemRowComponent cartItemRowComp : cartItemRowComps) {
             currentSubTotal += cartItemRowComp.subTotal();
-            currentTotalUnitPrices += cartItemRowComp.unitPrice() * cartItemRowComp.quantity();
+            currentTotalUnitPrices += cartItemRowComp.unitPrice() * cartItemRowComp.cartPageQuantity();
         }
         Assert.assertEquals(currentSubTotal, currentTotalUnitPrices, "[ERR] Shopping cart's sub-total is incorrect.");
 
         // Verify total
-        TotalComponent totalComp = shoppingCartPage.totalComp();
-        Map<String, Double> priceCategories = totalComp.priceCategories();
-        double checkoutSubTotal = 0;
-        double checkoutOtherFeesTotal = 0;
-        double checkoutTotal = 0;
-        for (String priceType : priceCategories.keySet()) {
-            double priceValue = priceCategories.get(priceType);
-            if (priceType.startsWith("Sub-Total")) {
-                checkoutSubTotal = priceValue;
-            } else if (priceType.startsWith("Total")) {
-                checkoutTotal = priceValue;
-            } else {
-                checkoutOtherFeesTotal += priceValue;
-            }
-        }
-        Assert.assertEquals(checkoutSubTotal, currentSubTotal, "[ERR] Sub-total is incorrect.");
-        Assert.assertEquals(checkoutTotal, (checkoutSubTotal + checkoutOtherFeesTotal), "[ERR] Total price is incorrect.");
-
+        verifyTotalPrice(currentSubTotal);
         return this;
     }
 
@@ -233,13 +206,118 @@ public class OrderComputerFlow <T extends ComputerEssentialComponent> {
         return this;
     }
 
-    public OrderComputerFlow inputPaymentInfo() {
-        Assert.fail();
+    public OrderComputerFlow inputPaymentInfo(CreditCardType creditCardType) {
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        PaymentInfoComponent paymentInfoComp = checkoutPage.paymentInfoComp();
+
+        switch (paymentMethod) {
+            case CHECK_MONEY_ORDER:
+                System.out.println("Using check/money order.");
+                break;
+            case CREDIT_CARD:
+                this.creditCardType = creditCardType;
+                paymentInfoComp.selectCardType(creditCardType);
+                String cardholderFirstname = defaultCheckoutUser.getFirstname();
+                String cardholderLastname = defaultCheckoutUser.getLastname();
+                paymentInfoComp.inputCardholderName(cardholderFirstname + " " + cardholderLastname);
+
+                switch (creditCardType) {
+                    case VISA:
+                        paymentInfoComp.inputCardNumber(defaultCheckoutUser.getVisa());
+                        break;
+                    case MASTER_CARD:
+                        paymentInfoComp.inputCardNumber(defaultCheckoutUser.getMastercard());
+                        break;
+                    case DISCOVER:
+                        paymentInfoComp.inputCardNumber(defaultCheckoutUser.getDiscover());
+                        break;
+                    case AMEX:
+                        paymentInfoComp.inputCardNumber(defaultCheckoutUser.getAmex());
+                        break;
+                }
+
+                Calendar calendar = new GregorianCalendar();
+                paymentInfoComp
+                        .inputExpiredMonth(String.valueOf(calendar.get(Calendar.MONTH) + 1))
+                        .inputExpiredYear(String.valueOf(calendar.get(Calendar.YEAR) + 1));
+
+                String randomCardCode = String.valueOf(new SecureRandom().nextInt(900) + 100);
+                paymentInfoComp.inputCardCode(randomCardCode);
+                break;
+            case PURCHASE_ORDER:
+                String randomPoNumber = String.valueOf(new SecureRandom().nextInt(900) + 100);
+                paymentInfoComp.inputPurchaseOrderNumber(randomPoNumber);
+                break;
+            default:
+                paymentInfoComp.verifyCodInfo();
+        }
+        paymentInfoComp.clickOnContinueBtn();
+
+        try {
+            Thread.sleep(3000);
+        } catch (Exception e) {
+        }
+
         return this;
     }
 
     public OrderComputerFlow confirmOrder() {
-        Assert.fail();
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        List<CartItemRowComponent> cartItemRowComps = isItemDisplay(checkoutPage);
+
+        // Verify sub-total
+        double currentSubTotal = 0;
+        double currentTotalUnitPrices = 0;
+        for (CartItemRowComponent cartItemRowComp : cartItemRowComps) {
+            currentSubTotal += cartItemRowComp.subTotal();
+            currentTotalUnitPrices += cartItemRowComp.unitPrice() * cartItemRowComp.checkoutPageQuantity();
+        }
+        Assert.assertEquals(currentSubTotal, currentTotalUnitPrices, "[ERR] Shopping cart's sub-total is incorrect.");
+
+        // Verify total
+        verifyTotalPrice(currentSubTotal);
+
+        ConfirmOrderComponent confirmOrderComp = checkoutPage.confirmOrderComp();
+        confirmOrderComp.clickOnConfirmBtn();
         return this;
+    }
+
+    public void continueToShopping() {
+        CompletedPage completedPage = new CompletedPage(driver);
+        OrderCompleteComponent orderCompleteComp = completedPage.orderCompleteComp();
+        orderCompleteComp
+                .verifyOrderComplete()
+                .clickOnContinueBtn();
+    }
+
+    private static void verifyTotalPrice(double currentSubTotal) {
+        BasePage basePage = new BasePage(driver);
+        List<CartItemRowComponent> cartItemRowComps = isItemDisplay(basePage);
+
+        TotalComponent totalComp = basePage.totalComp();
+        Map<String, Double> priceCategories = totalComp.priceCategories();
+        double checkoutSubTotal = 0;
+        double checkoutOtherFeesTotal = 0;
+        double checkoutTotal = 0;
+        for (String priceType : priceCategories.keySet()) {
+            double priceValue = priceCategories.get(priceType);
+            if (priceType.startsWith("Sub-Total")) {
+                checkoutSubTotal = priceValue;
+            } else if (priceType.startsWith("Total")) {
+                checkoutTotal = priceValue;
+            } else {
+                checkoutOtherFeesTotal += priceValue;
+            }
+        }
+        Assert.assertEquals(checkoutSubTotal, currentSubTotal, "[ERR] Sub-total is incorrect.");
+        Assert.assertEquals(checkoutTotal, (checkoutSubTotal + checkoutOtherFeesTotal), "[ERR] Total price is incorrect.");
+    }
+
+    private static List<CartItemRowComponent> isItemDisplay(BasePage basePage) {
+        List<CartItemRowComponent> cartItemRowComps = basePage.cartItemRowComponents();
+        if (cartItemRowComps.isEmpty()) {
+            Assert.fail("[ERR] There is no item display in the shopping cart.");
+        }
+        return cartItemRowComps;
     }
 }

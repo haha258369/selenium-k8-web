@@ -11,12 +11,4 @@ public class ShoppingCartPage extends BasePage{
     public ShoppingCartPage(WebDriver driver) {
         super(driver);
     }
-
-    public List<CartItemRowComponent> cartItemRowComponents() {
-        return findComponents(CartItemRowComponent.class, driver);
-    }
-
-    public TotalComponent totalComp() {
-        return findComponent(TotalComponent.class, driver);
-    }
 }

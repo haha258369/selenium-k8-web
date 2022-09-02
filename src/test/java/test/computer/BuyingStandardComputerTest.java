@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test.BaseTest;
 import test_data.ComputerData;
+import test_data.CreditCardType;
 import test_data.DataObjectBuilder;
 import test_data.PaymentMethod;
 import test_flows.computer.OrderComputerFlow;
@@ -25,8 +26,8 @@ public class BuyingStandardComputerTest extends BaseTest implements Urls {
                 .inputBillingAddress()
                 .inputShippingAddress()
                 .selectShippingMethod()
-                .selectPaymentMethod(PaymentMethod.PURCHASE_ORDER)
-                .inputPaymentInfo()
+                .selectPaymentMethod(PaymentMethod.CREDIT_CARD)
+                .inputPaymentInfo(CreditCardType.VISA)
                 .confirmOrder();
     }
 

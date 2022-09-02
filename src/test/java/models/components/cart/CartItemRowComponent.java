@@ -6,11 +6,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 @ComponentCssSelector(".cart-item-row")
 public class CartItemRowComponent extends Component {
 
     private final static By unitPriceSelector =By.cssSelector(".product-unit-price");
     private final static By quantityInputSelector =By.cssSelector(".qty-input");
+    private final String quantityInputAttribute = "value";
+    private final static By quantityConfirmSelector =By.cssSelector(".qty.nobr span");
+    private final String quantityConfirmAttribute = "span";
     private final static By subTotalSelector =By.cssSelector(".product-subtotal");
 
     public CartItemRowComponent(WebDriver driver, WebElement component) {
@@ -21,8 +26,12 @@ public class CartItemRowComponent extends Component {
         return getValue(unitPriceSelector);
     }
 
-    public double quantity() {
-        return Double.parseDouble(component.findElement(quantityInputSelector).getAttribute("value").trim());
+    public double cartPageQuantity() {
+        return Double.parseDouble(component.findElement(quantityInputSelector).getAttribute(quantityInputAttribute).trim());
+    }
+
+    public double checkoutPageQuantity() {
+        return Double.parseDouble(component.findElements(quantityConfirmSelector).get(1).getText().trim());
     }
 
     public double subTotal() {
