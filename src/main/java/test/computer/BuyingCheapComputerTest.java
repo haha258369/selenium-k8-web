@@ -14,7 +14,7 @@ import url.Urls;
 
 public class BuyingCheapComputerTest extends BaseTest implements Urls {
 
-    @Test(dataProvider = "computerData")
+    @Test(dataProvider = "computerData", enabled = true)
     public void testBuyingCheapComputer(ComputerData computerData) {
         WebDriver driver = getDriver();
         driver.get(demoBaseUrl.concat(cheapComputer));
