@@ -10,9 +10,9 @@
     </test>
 
     <test name="Buying Computer" parallel="tests" thread-count="10">
-        <parameter name="browser" value="firefox"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
-<!--            <class name="test.computer.BuyingCheapComputerTest"/>-->
+            <class name="test.computer.BuyingCheapComputerTest"/>
         </classes>
     </test>
 </suite>

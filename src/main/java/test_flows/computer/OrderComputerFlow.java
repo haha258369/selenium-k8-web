@@ -140,7 +140,7 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
     }
 
     public OrderComputerFlow inputBillingAddress() {
-        String defaultCheckoutUserJsonLocation = "/src/main/java/test_data/user/DefaultCheckoutUser.json";
+        String defaultCheckoutUserJsonLocation = "/src/main/java/test/test_data/user/DefaultCheckoutUser.json";
         defaultCheckoutUser = DataObjectBuilder.buildDataObjectFrom(defaultCheckoutUserJsonLocation, UserDataObject.class);
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         BillingAddressComponent billingAddressComp = checkoutPage.billingAddressComp();
@@ -206,7 +206,9 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
         return this;
     }
 
+    // Test Card Number: https://www.paypalobjects.com/en_GB/vhelp/paypalmanager_help/credit_card_numbers.htm
     public OrderComputerFlow inputPaymentInfo(CreditCardType creditCardType) {
+        this.creditCardType = creditCardType;
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         PaymentInfoComponent paymentInfoComp = checkoutPage.paymentInfoComp();
 
@@ -236,6 +238,7 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
                         break;
                 }
 
+                // Select current month and next year
                 Calendar calendar = new GregorianCalendar();
                 paymentInfoComp
                         .inputExpiredMonth(String.valueOf(calendar.get(Calendar.MONTH) + 1))
@@ -244,6 +247,7 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
                 String randomCardCode = String.valueOf(new SecureRandom().nextInt(900) + 100);
                 paymentInfoComp.inputCardCode(randomCardCode);
                 break;
+
             case PURCHASE_ORDER:
                 String randomPoNumber = String.valueOf(new SecureRandom().nextInt(900) + 100);
                 paymentInfoComp.inputPurchaseOrderNumber(randomPoNumber);

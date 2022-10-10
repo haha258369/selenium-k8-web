@@ -1,5 +1,6 @@
 package test_flows.global;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import test.models.components.global.header.TopMenuComponent;
 import static test.models.components.global.header.TopMenuComponent.MainCategoryItem;
 import static test.models.components.global.header.TopMenuComponent.SublistComponent;
@@ -14,6 +15,7 @@ import org.testng.Assert;
 import url.Urls;
 
 import java.security.SecureRandom;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -40,6 +42,7 @@ public class FooterTestFlow {
     }
 
     private void verifyInformationColumn(FooterColumnComponent footerColumnComp) {
+        String baseUrl = Urls.demoBaseUrl;
         List<String> expectedLinkTexts = Arrays.asList(
                 "Sitemap", "Shipping & Returns", "Privacy Notice",
                 "Conditions of Use", "About us", "Contact us"
@@ -53,6 +56,7 @@ public class FooterTestFlow {
     }
 
     private void verifyCustomerServiceColumn(FooterColumnComponent footerColumnComp) {
+        String baseUrl = Urls.demoBaseUrl;
         List<String> expectedLinkTexts = Arrays.asList(
                 "Search", "News", "Blog",
                 "Recently viewed products", "Compare products list", "New products"
@@ -66,6 +70,7 @@ public class FooterTestFlow {
     }
 
     private void verifyMyAccountColumn(FooterColumnComponent footerColumnComp) {
+        String baseUrl = Urls.demoBaseUrl;
         List<String> expectedLinkTexts = Arrays.asList(
                 "My account", "Orders",
                 "Addresses", "Shopping cart", "Wishlist"
@@ -79,6 +84,7 @@ public class FooterTestFlow {
     }
 
     private void verifyFollowUsColumn(FooterColumnComponent footerColumnComp) {
+        String baseUrl = Urls.demoBaseUrl;
         List<String> expectedLinkTexts = Arrays.asList(
                 "Facebook", "Twitter",
                 "RSS", "YouTube", "Google+"
@@ -145,8 +151,9 @@ public class FooterTestFlow {
 
         // After click on component, wait until hyperlink is present in url
         try {
-            basePage.wait.until(ExpectedConditions.urlContains(randomCategoryHref));
-        } catch (TimeoutException e) {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.urlContains(randomCategoryHref));
+        } catch (TimeoutException e){
             Assert.fail("[ERR] Target page is not matched!");
         }
 

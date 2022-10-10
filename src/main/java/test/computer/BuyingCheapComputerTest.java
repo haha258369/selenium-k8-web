@@ -14,7 +14,7 @@ import url.Urls;
 
 public class BuyingCheapComputerTest extends BaseTest implements Urls {
 
-    @Test(dataProvider = "computerData", enabled = true)
+    @Test(dataProvider = "computerData")
     public void testBuyingCheapComputer(ComputerData computerData) {
         WebDriver driver = getDriver();
         driver.get(demoBaseUrl.concat(cheapComputer));
@@ -36,7 +36,7 @@ public class BuyingCheapComputerTest extends BaseTest implements Urls {
 
     @DataProvider
     public ComputerData[] computerData() {
-        String fileLocation = "/src/main/java/test_data/computer/CheapComputerData.json";
+        String fileLocation = "/src/main/java/test/test_data/computer/CheapComputerData.json";
         return DataObjectBuilder.buildDataObjectFrom(fileLocation, ComputerData[].class);
     }
 }
