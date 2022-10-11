@@ -5,14 +5,20 @@
         <parameter name="browser" value="firefox"/>
         <classes>
 <!--            <class name="test.global.footer.FooterTest"/>-->
-<!--            <class name="test.computer.BuyingStandardComputerTest"/>-->
         </classes>
     </test>
 
-    <test name="Buying Computer" parallel="tests" thread-count="10">
+    <test name="Buying Cheap Computer" parallel="tests" thread-count="10">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="test.computer.BuyingCheapComputerTest"/>
+        </classes>
+    </test>
+
+    <test name="Buying Standard Computer" parallel="tests" thread-count="10">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+<!--            <class name="test.computer.BuyingStandardComputerTest"/>-->
         </classes>
     </test>
 </suite>

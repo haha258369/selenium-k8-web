@@ -24,13 +24,13 @@
         <methods>
           <include name="captureScreenshot"/>
           <include name="closeBrowserSession"/>
-          <include name="testBuyingCheapComputer"/>
+          <include name="testBuyingCheapComputer" invocation-numbers="0"/>
           <include name="initBrowserSession"/>
         </methods>
       </class> <!-- test.computer.BuyingCheapComputerTest -->
       <class name="test.computer.BuyingStandardComputerTest">
         <methods>
-          <include name="testBuyingStandardComputer"/>
+          <include name="testBuyingStandardComputer" invocation-numbers="0"/>
           <include name="captureScreenshot"/>
           <include name="closeBrowserSession"/>
           <include name="initBrowserSession"/>

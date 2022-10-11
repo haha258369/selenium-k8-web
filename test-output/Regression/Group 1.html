@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Group 1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/4/7</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 09 16:22:55 ICT 2022</td>
+<td>Started on:</td><td>Tue Oct 11 23:15:41 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (378 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (353 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -84,8 +84,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1656590248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1656590248'><pre>java.lang.IllegalArgumentException: null is not supported!
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1891627561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1891627561'><pre>java.lang.IllegalArgumentException: null is not supported!
 	at driver.DriverFactory.getDriver(DriverFactory.java:49)
 	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -119,6 +119,96 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>0</td>
 <td>test.global.footer.FooterTest@61386958</td></tr>
+<tr>
+<td title='test.computer.BuyingCheapComputerTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.computer.BuyingCheapComputerTest<br>Parameters: [TestResult name=testBuyingCheapComputer status=FAILURE method=BuyingCheapComputerTest.testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96] output={null}]</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1262418452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262418452'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>test.computer.BuyingCheapComputerTest@3246fb96</td></tr>
+<tr>
+<td title='test.computer.BuyingStandardComputerTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.computer.BuyingStandardComputerTest<br>Parameters: [TestResult name=testBuyingStandardComputer status=FAILURE method=BuyingStandardComputerTest.testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612] output={null}]</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1318955222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318955222'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>test.computer.BuyingStandardComputerTest@2e222612</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -128,10 +218,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='test.computer.BuyingStandardComputerTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.computer.BuyingStandardComputerTest</td>
+<td></td>
+<td>0</td>
+<td>test.computer.BuyingStandardComputerTest@2e222612</td></tr>
+<tr>
 <td title='test.global.footer.FooterTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.global.footer.FooterTest</td>
 <td></td>
 <td>0</td>
 <td>test.global.footer.FooterTest@61386958</td></tr>
+<tr>
+<td title='test.computer.BuyingCheapComputerTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.computer.BuyingCheapComputerTest</td>
+<td></td>
+<td>0</td>
+<td>test.computer.BuyingCheapComputerTest@3246fb96</td></tr>
+<tr>
+<td title='test.computer.BuyingStandardComputerTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.computer.BuyingStandardComputerTest</td>
+<td></td>
+<td>0</td>
+<td>test.computer.BuyingStandardComputerTest@2e222612</td></tr>
 <tr>
 <td title='test.global.footer.FooterTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.global.footer.FooterTest</td>
 <td></td>
@@ -142,6 +247,11 @@ function toggleAllBoxes() {
 <td></td>
 <td>0</td>
 <td>test.global.footer.FooterTest@61386958</td></tr>
+<tr>
+<td title='test.computer.BuyingCheapComputerTest.captureScreenshot()'><b>captureScreenshot</b><br>Test class: test.computer.BuyingCheapComputerTest</td>
+<td></td>
+<td>0</td>
+<td>test.computer.BuyingCheapComputerTest@3246fb96</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -161,8 +271,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1105871825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1105871825'><pre>java.lang.IllegalArgumentException: null is not supported!
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2106237113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2106237113'><pre>java.lang.IllegalArgumentException: null is not supported!
 	at driver.DriverFactory.getDriver(DriverFactory.java:49)
 	at test.BaseTest.getDriver(BaseTest.java:30)
 	at test.global.footer.FooterTest.testFooterCategoryPage(FooterTest.java:13)
@@ -201,8 +311,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1936781822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1936781822'><pre>java.lang.AssertionError: [ERR] They are different! expected [true] but found [false]
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2072958714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2072958714'><pre>java.lang.AssertionError: [ERR] They are different! expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertTrue(Assert.java:56)
@@ -233,6 +343,90 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>0</td>
 <td>test.global.footer.FooterTestByTestNG@73ee04c8</td></tr>
+<tr>
+<td title='test.computer.BuyingStandardComputerTest.testBuyingStandardComputer()'><b>testBuyingStandardComputer</b><br>Test class: test.computer.BuyingStandardComputerTest<br>Parameters: ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Office'}</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.getDriver(BaseTest.java:30)
+	at test.computer.BuyingStandardComputerTest.testBuyingStandardComputer(BuyingStandardComputerTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1344434247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1344434247'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.getDriver(BaseTest.java:30)
+	at test.computer.BuyingStandardComputerTest.testBuyingStandardComputer(BuyingStandardComputerTest.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>test.computer.BuyingStandardComputerTest@2e222612</td></tr>
+<tr>
+<td title='test.computer.BuyingCheapComputerTest.testBuyingCheapComputer()'><b>testBuyingCheapComputer</b><br>Test class: test.computer.BuyingCheapComputerTest<br>Parameters: ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.getDriver(BaseTest.java:30)
+	at test.computer.BuyingCheapComputerTest.testBuyingCheapComputer(BuyingCheapComputerTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33160257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33160257'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.getDriver(BaseTest.java:30)
+	at test.computer.BuyingCheapComputerTest.testBuyingCheapComputer(BuyingCheapComputerTest.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>test.computer.BuyingCheapComputerTest@3246fb96</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -242,17 +436,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='test.global.footer.FooterTestByTestNG.testFooterCategoryPage()'><b>testFooterCategoryPage</b><br>Test class: test.global.footer.FooterTestByTestNG</td>
+<td></td>
+<td>0</td>
+<td>test.global.footer.FooterTestByTestNG@73ee04c8</td></tr>
+<tr>
 <td title='test.global.footer.FooterTestByTestNG.testFooterLoginPage()'><b>testFooterLoginPage</b><br>Test class: test.global.footer.FooterTestByTestNG</td>
 <td></td>
 <td>0</td>
 <td>test.global.footer.FooterTestByTestNG@73ee04c8</td></tr>
 <tr>
 <td title='test.global.footer.FooterTestByTestNG.testFooterRegisterPage()'><b>testFooterRegisterPage</b><br>Test class: test.global.footer.FooterTestByTestNG</td>
-<td></td>
-<td>0</td>
-<td>test.global.footer.FooterTestByTestNG@73ee04c8</td></tr>
-<tr>
-<td title='test.global.footer.FooterTestByTestNG.testFooterCategoryPage()'><b>testFooterCategoryPage</b><br>Test class: test.global.footer.FooterTestByTestNG</td>
 <td></td>
 <td>0</td>
 <td>test.global.footer.FooterTestByTestNG@73ee04c8</td></tr>
@@ -265,6 +459,96 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='test.computer.BuyingCheapComputerTest.testBuyingCheapComputer()'><b>testBuyingCheapComputer</b><br>Test class: test.computer.BuyingCheapComputerTest<br>Parameters: ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite'}</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556519638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556519638'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>test.computer.BuyingCheapComputerTest@3246fb96</td></tr>
+<tr>
+<td title='test.computer.BuyingStandardComputerTest.testBuyingStandardComputer()'><b>testBuyingStandardComputer</b><br>Test class: test.computer.BuyingStandardComputerTest<br>Parameters: ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Reader'}</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810803071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810803071'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>test.computer.BuyingStandardComputerTest@2e222612</td></tr>
+<tr>
 <td title='test.global.footer.FooterTest.testFooterRegisterPage()'><b>testFooterRegisterPage</b><br>Test class: test.global.footer.FooterTest</td>
 <td><div><pre>java.lang.IllegalArgumentException: null is not supported!
 	at driver.DriverFactory.getDriver(DriverFactory.java:49)
@@ -274,8 +558,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1303934364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1303934364'><pre>java.lang.IllegalArgumentException: null is not supported!
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1879258753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1879258753'><pre>java.lang.IllegalArgumentException: null is not supported!
 	at driver.DriverFactory.getDriver(DriverFactory.java:49)
 	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -310,26 +594,33 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>test.global.footer.FooterTest@61386958</td></tr>
 <tr>
-<td title='test.computer.BuyingCheapComputerTest.testBuyingCheapComputer()'><b>testBuyingCheapComputer</b><br>Test class: test.computer.BuyingCheapComputerTest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
+<td title='test.computer.BuyingCheapComputerTest.testBuyingCheapComputer()'><b>testBuyingCheapComputer</b><br>Test class: test.computer.BuyingCheapComputerTest<br>Parameters: ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'}</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
-	at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-	at test.computer.BuyingCheapComputerTest.computerData(BuyingCheapComputerTest.java:40)
-	... 20 more
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1092846054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1092846054'><pre>java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:153)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:767)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1453469364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1453469364'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -344,20 +635,54 @@ Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
-	at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-	at test.computer.BuyingCheapComputerTest.computerData(BuyingCheapComputerTest.java:40)
+</pre></div></td>
+<td>0</td>
+<td>test.computer.BuyingCheapComputerTest@3246fb96</td></tr>
+<tr>
+<td title='test.computer.BuyingStandardComputerTest.testBuyingStandardComputer()'><b>testBuyingStandardComputer</b><br>Test class: test.computer.BuyingStandardComputerTest<br>Parameters: ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Commander'}</td>
+<td><div><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace200641218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace200641218'><pre>java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	... 20 more
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>0</td>
-<td>test.computer.BuyingCheapComputerTest@3246fb96</td></tr>
+<td>test.computer.BuyingStandardComputerTest@2e222612</td></tr>
 <tr>
 <td title='test.global.footer.FooterTest.testFooterHomePage()'><b>testFooterHomePage</b><br>Test class: test.global.footer.FooterTest</td>
 <td><div><pre>java.lang.IllegalArgumentException: null is not supported!
@@ -368,8 +693,8 @@ Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1570737354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1570737354'><pre>java.lang.IllegalArgumentException: null is not supported!
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1126280745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1126280745'><pre>java.lang.IllegalArgumentException: null is not supported!
 	at driver.DriverFactory.getDriver(DriverFactory.java:49)
 	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -413,8 +738,8 @@ Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace430992974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace430992974'><pre>java.lang.IllegalArgumentException: null is not supported!
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1009993727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1009993727'><pre>java.lang.IllegalArgumentException: null is not supported!
 	at driver.DriverFactory.getDriver(DriverFactory.java:49)
 	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -448,55 +773,6 @@ Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.
 </pre></div></td>
 <td>0</td>
 <td>test.global.footer.FooterTest@61386958</td></tr>
-<tr>
-<td title='test.computer.BuyingStandardComputerTest.testBuyingStandardComputer()'><b>testBuyingStandardComputer</b><br>Test class: test.computer.BuyingStandardComputerTest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
-	at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-	at test.computer.BuyingStandardComputerTest.computerData(BuyingStandardComputerTest.java:39)
-	... 20 more
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1714484303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1714484303'><pre>java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:153)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:767)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
-	at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-	at test.computer.BuyingStandardComputerTest.computerData(BuyingStandardComputerTest.java:39)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	... 20 more
-</pre></div></td>
-<td>0</td>
-<td>test.computer.BuyingStandardComputerTest@2e222612</td></tr>
 </table><p>
 </body>
 </html>

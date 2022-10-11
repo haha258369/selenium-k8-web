@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,  5 skipped,  3 passed</span>
+                    <span class="method-stats">14 methods, 4 failed,  7 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,16 @@
                       <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
                     </span>
                     <div class="method-list-content failed suite-Regression">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testBuyingCheapComputer(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;8 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Image Viever&#039;})">testBuyingCheapComputer(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testBuyingStandardComputer(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;8GB&#039;, os=&#039;Ubuntu&#039;, hdd=&#039;400 GB&#039;, software=&#039;Microsoft Offic...)">testBuyingStandardComputer(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Offic...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regression" title="test.global.footer.FooterTest" class="method navigator-link" hash-for-method="testFooterCategoryPage">testFooterCategoryPage</a> <!-- method navigator-link -->
@@ -123,12 +133,22 @@
                     <div class="method-list-content skipped suite-Regression">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testBuyingCheapComputer">testBuyingCheapComputer</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testBuyingCheapComputer(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;2 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Other Office Suite...)">testBuyingCheapComputer(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testBuyingStandardComputer">testBuyingStandardComputer</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testBuyingCheapComputer(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;4 GB&#039;, os=&#039;null&#039;, hdd=&#039;400 GB&#039;, software=&#039;Office Suite&#039;})">testBuyingCheapComputer(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testBuyingStandardComputer(ComputerData{processorType=&#039;2.5GHz&#039;, ram=&#039;4GB&#039;, os=&#039;Windows 7&#039;, hdd=&#039;320 GB&#039;, software=&#039;Acrobat Read...)">testBuyingStandardComputer(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Read...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="test.computer.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testBuyingStandardComputer(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;2GB&#039;, os=&#039;Windows 10&#039;, hdd=&#039;320 GB&#039;, software=&#039;Total Comma...)">testBuyingStandardComputer(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Comma...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -232,6 +252,60 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.computer.BuyingCheapComputerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuyingCheapComputer(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;8 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Image Viever&#039;})">
+                  </a> <!-- testBuyingCheapComputer(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}) -->
+                  <span class="method-name">testBuyingCheapComputer</span>
+                  <span class="parameters">(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.getDriver(BaseTest.java:30)
+	at test.computer.BuyingCheapComputerTest.testBuyingCheapComputer(BuyingCheapComputerTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.computer.BuyingStandardComputerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuyingStandardComputer(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;8GB&#039;, os=&#039;Ubuntu&#039;, hdd=&#039;400 GB&#039;, software=&#039;Microsoft Offic...)">
+                  </a> <!-- testBuyingStandardComputer(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Offic...) -->
+                  <span class="method-name">testBuyingStandardComputer</span>
+                  <span class="parameters">(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Office'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.getDriver(BaseTest.java:30)
+	at test.computer.BuyingStandardComputerTest.testBuyingStandardComputer(BuyingStandardComputerTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
           <div class="suite-Regression-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -299,19 +373,36 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBuyingCheapComputer">
-                  </a> <!-- testBuyingCheapComputer -->
+                  <a name="testBuyingCheapComputer(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;2 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Other Office Suite...)">
+                  </a> <!-- testBuyingCheapComputer(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...) -->
                   <span class="method-name">testBuyingCheapComputer</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
+                  <span class="parameters">(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
-	at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-	at test.computer.BuyingCheapComputerTest.computerData(BuyingCheapComputerTest.java:40)
-	... 20 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuyingCheapComputer(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;4 GB&#039;, os=&#039;null&#039;, hdd=&#039;400 GB&#039;, software=&#039;Office Suite&#039;})">
+                  </a> <!-- testBuyingCheapComputer(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'}) -->
+                  <span class="method-name">testBuyingCheapComputer</span>
+                  <span class="parameters">(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 ... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -326,19 +417,36 @@ Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBuyingStandardComputer">
-                  </a> <!-- testBuyingStandardComputer -->
+                  <a name="testBuyingStandardComputer(ComputerData{processorType=&#039;2.5GHz&#039;, ram=&#039;4GB&#039;, os=&#039;Windows 7&#039;, hdd=&#039;320 GB&#039;, software=&#039;Acrobat Read...)">
+                  </a> <!-- testBuyingStandardComputer(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Read...) -->
                   <span class="method-name">testBuyingStandardComputer</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
+                  <span class="parameters">(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Reader'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
-	at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-	at test.computer.BuyingStandardComputerTest.computerData(BuyingStandardComputerTest.java:39)
-	... 20 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuyingStandardComputer(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;2GB&#039;, os=&#039;Windows 10&#039;, hdd=&#039;320 GB&#039;, software=&#039;Total Comma...)">
+                  </a> <!-- testBuyingStandardComputer(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Comma...) -->
+                  <span class="method-name">testBuyingStandardComputer</span>
+                  <span class="parameters">(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Commander'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: null is not supported!
+	at driver.DriverFactory.getDriver(DriverFactory.java:49)
+	at test.BaseTest.captureScreenshot(BaseTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 ... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -498,15 +606,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testFooterCategoryPage')
-data.setCell(0, 2, 'test.global.footer.FooterTestByTestNG')
-data.setCell(0, 3, 18);
+data.setCell(0, 1, 'testBuyingCheapComputer')
+data.setCell(0, 2, 'test.computer.BuyingCheapComputerTest')
+data.setCell(0, 3, 82);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testFooterCategoryPage')
-data.setCell(1, 2, 'test.global.footer.FooterTest')
-data.setCell(1, 3, 17);
+data.setCell(1, 2, 'test.global.footer.FooterTestByTestNG')
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testFooterLoginPage')
 data.setCell(2, 2, 'test.global.footer.FooterTestByTestNG')
@@ -516,34 +624,50 @@ data.setCell(3, 1, 'testFooterRegisterPage')
 data.setCell(3, 2, 'test.global.footer.FooterTestByTestNG')
 data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testFooterHomePage')
-data.setCell(4, 2, 'test.global.footer.FooterTestByTestNG')
+data.setCell(4, 1, 'testFooterCategoryPage')
+data.setCell(4, 2, 'test.global.footer.FooterTest')
 data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testFooterHomePage')
-data.setCell(5, 2, 'test.global.footer.FooterTest')
+data.setCell(5, 2, 'test.global.footer.FooterTestByTestNG')
 data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testFooterRegisterPage')
-data.setCell(6, 2, 'test.global.footer.FooterTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'testBuyingStandardComputer')
+data.setCell(6, 2, 'test.computer.BuyingStandardComputerTest')
+data.setCell(6, 3, 1);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testBuyingCheapComputer')
 data.setCell(7, 2, 'test.computer.BuyingCheapComputerTest')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testFooterLoginPage')
-data.setCell(8, 2, 'test.global.footer.FooterTest')
+data.setCell(8, 1, 'testBuyingStandardComputer')
+data.setCell(8, 2, 'test.computer.BuyingStandardComputerTest')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testBuyingStandardComputer')
-data.setCell(9, 2, 'test.computer.BuyingStandardComputerTest')
+data.setCell(9, 1, 'testFooterRegisterPage')
+data.setCell(9, 2, 'test.global.footer.FooterTest')
 data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testBuyingCheapComputer')
+data.setCell(10, 2, 'test.computer.BuyingCheapComputerTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testBuyingStandardComputer')
+data.setCell(11, 2, 'test.computer.BuyingStandardComputerTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testFooterHomePage')
+data.setCell(12, 2, 'test.global.footer.FooterTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testFooterLoginPage')
+data.setCell(13, 2, 'test.global.footer.FooterTest')
+data.setCell(13, 3, 0);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 378 ms</span>
+              <span class="suite-total-time">Total running time: 353 ms</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -603,70 +727,132 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">test.computer.BuyingCheapComputerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBuyingCheapComputer(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</span>
+                <span class="method-start">145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureScreenshot([TestResult name=testBuyingCheapComputer status=FAILURE method=BuyingCheapComputerTest.testBuyingChe...)</span>
+                <span class="method-start">242 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testBuyingCheapComputer(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">258 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testBuyingCheapComputer(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...)</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">263 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.computer.BuyingStandardComputerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBuyingStandardComputer(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Offic...)</span>
+                <span class="method-start">268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureScreenshot([TestResult name=testBuyingStandardComputer status=FAILURE method=BuyingStandardComputerTest.testBuy...)</span>
+                <span class="method-start">271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testBuyingStandardComputer(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Read...)</span>
+                <span class="method-start">276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">279 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testBuyingStandardComputer(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Comma...)</span>
+                <span class="method-start">281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">test.global.footer.FooterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testFooterCategoryPage</span>
-                <span class="method-start">265 ms</span>
+                <span class="method-start">285 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">captureScreenshot([TestResult name=testFooterCategoryPage status=FAILURE method=FooterTest.testFooterCategoryPage()[pr...)</span>
-                <span class="method-start">287 ms</span>
+                <span class="method-start">288 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testFooterHomePage</span>
-                <span class="method-start">303 ms</span>
+                <span class="method-start">295 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureScreenshot</span>
-                <span class="method-start">307 ms</span>
+                <span class="method-start">298 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testFooterLoginPage</span>
-                <span class="method-start">310 ms</span>
+                <span class="method-start">300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureScreenshot</span>
-                <span class="method-start">313 ms</span>
+                <span class="method-start">302 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testFooterRegisterPage</span>
-                <span class="method-start">316 ms</span>
+                <span class="method-start">304 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureScreenshot</span>
-                <span class="method-start">319 ms</span>
+                <span class="method-start">309 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.global.footer.FooterTestByTestNG</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testFooterLoginPage</span>
-                <span class="method-start">321 ms</span>
+                <span class="method-start">311 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testFooterRegisterPage</span>
-                <span class="method-start">327 ms</span>
+                <span class="method-start">315 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testFooterCategoryPage</span>
-                <span class="method-start">331 ms</span>
+                <span class="method-start">319 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testFooterHomePage</span>
-                <span class="method-start">353 ms</span>
+                <span class="method-start">332 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowserSession</span>
-                <span class="method-start">357 ms</span>
+                <span class="method-start">334 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

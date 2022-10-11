@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="16" passed="3" failed="2" skipped="5">
+<testng-results ignored="6" total="20" passed="3" failed="4" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-09T16:22:55 ICT" name="Regression" finished-at="2022-10-09T16:22:55 ICT" duration-ms="378">
+  <suite started-at="2022-10-11T23:15:41 ICT" name="Regression" finished-at="2022-10-11T23:15:41 ICT" duration-ms="353">
     <groups>
     </groups>
-    <test started-at="2022-10-09T16:22:55 ICT" name="Group 4" finished-at="2022-10-09T16:22:55 ICT" duration-ms="29">
-    </test> <!-- Group 4 -->
-    <test started-at="2022-10-09T16:22:55 ICT" name="Group 2" finished-at="2022-10-09T16:22:55 ICT" duration-ms="30">
+    <test started-at="2022-10-11T23:15:41 ICT" name="Group 2" finished-at="2022-10-11T23:15:41 ICT" duration-ms="28">
     </test> <!-- Group 2 -->
-    <test started-at="2022-10-09T16:22:55 ICT" name="Group 3" finished-at="2022-10-09T16:22:55 ICT" duration-ms="27">
+    <test started-at="2022-10-11T23:15:41 ICT" name="Group 4" finished-at="2022-10-11T23:15:41 ICT" duration-ms="27">
+    </test> <!-- Group 4 -->
+    <test started-at="2022-10-11T23:15:41 ICT" name="Group 3" finished-at="2022-10-11T23:15:41 ICT" duration-ms="26">
     </test> <!-- Group 3 -->
-    <test started-at="2022-10-09T16:22:55 ICT" name="Group 1" finished-at="2022-10-09T16:22:55 ICT" duration-ms="378">
+    <test started-at="2022-10-11T23:15:41 ICT" name="Group 1" finished-at="2022-10-11T23:15:41 ICT" duration-ms="353">
       <class name="test.global.footer.FooterTest">
-        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="testFooterCategoryPage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="17" status="FAIL">
+        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterCategoryPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -52,7 +52,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterCategoryPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="captureScreenshot" finished-at="2022-10-09T16:22:55 ICT" duration-ms="2" status="FAIL">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterHomePage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="testFooterHomePage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="1" status="SKIP">
+        <test-method signature="testFooterHomePage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterHomePage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -145,11 +145,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterHomePage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="captureScreenshot" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="testFooterLoginPage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterLoginPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -192,11 +192,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterLoginPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="captureScreenshot" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="testFooterRegisterPage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterRegisterPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -239,25 +239,25 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterRegisterPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-09T16:22:55 ICT" name="captureScreenshot" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
       </class> <!-- test.global.footer.FooterTest -->
       <class name="test.global.footer.FooterTestByTestNG">
-        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-09T16:22:55 ICT" name="testFooterLoginPage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="1" status="PASS">
+        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterLoginPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterLoginPage -->
-        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-09T16:22:55 ICT" name="testFooterRegisterPage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="1" status="PASS">
+        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterRegisterPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterRegisterPage -->
-        <test-method signature="testFooterCategoryPage()[pri:1, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-09T16:22:55 ICT" name="testFooterCategoryPage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="18" status="PASS">
+        <test-method signature="testFooterCategoryPage()[pri:1, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterCategoryPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterCategoryPage -->
-        <test-method signature="testFooterHomePage()[pri:2, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-09T16:22:55 ICT" name="testFooterHomePage" finished-at="2022-10-09T16:22:55 ICT" duration-ms="1" status="FAIL">
+        <test-method signature="testFooterHomePage()[pri:2, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterHomePage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[[ERR] They are different! expected [true] but found [false]]]>
@@ -299,20 +299,32 @@ at java.base/java.lang.Thread.run(Thread.java:833)
         </test-method> <!-- testFooterHomePage -->
       </class> <!-- test.global.footer.FooterTestByTestNG -->
       <class name="test.computer.BuyingStandardComputerTest">
-        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-09T16:22:55 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
+        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Office'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json]]>
+              <![CDATA[null is not supported!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:153)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:767)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.getDriver(BaseTest.java:30)
+at test.computer.BuyingStandardComputerTest.testBuyingStandardComputer(BuyingStandardComputerTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -327,39 +339,42 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/StandardComputerData.json
-at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-at test.computer.BuyingStandardComputerTest.computerData(BuyingStandardComputerTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-... 20 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingStandardComputer -->
-      </class> <!-- test.computer.BuyingStandardComputerTest -->
-      <class name="test.computer.BuyingCheapComputerTest">
-        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-09T16:22:55 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testBuyingStandardComputer status=FAILURE method=BuyingStandardComputerTest.testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json]]>
+              <![CDATA[null is not supported!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:153)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:767)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.captureScreenshot(BaseTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -374,26 +389,329 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.RuntimeException: [ERR] Error while reading the file A:\13.JAVA\selenium-k8-web/src/main/java/test_data/computer/CheapComputerData.json
-at test.test_data.DataObjectBuilder.buildDataObjectFrom(DataObjectBuilder.java:25)
-at test.computer.BuyingCheapComputerTest.computerData(BuyingCheapComputerTest.java:40)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Reader'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[null is not supported!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.captureScreenshot(BaseTest.java:66)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-... 20 more
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyingStandardComputer -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Commander'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[null is not supported!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.captureScreenshot(BaseTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyingStandardComputer -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+      </class> <!-- test.computer.BuyingStandardComputerTest -->
+      <class name="test.computer.BuyingCheapComputerTest">
+        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="82" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[null is not supported!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.getDriver(BaseTest.java:30)
+at test.computer.BuyingCheapComputerTest.testBuyingCheapComputer(BuyingCheapComputerTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingCheapComputer -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testBuyingCheapComputer status=FAILURE method=BuyingCheapComputerTest.testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[null is not supported!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.captureScreenshot(BaseTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[null is not supported!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.captureScreenshot(BaseTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyingCheapComputer -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[null is not supported!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: null is not supported!
+at driver.DriverFactory.getDriver(DriverFactory.java:49)
+at test.BaseTest.captureScreenshot(BaseTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyingCheapComputer -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
       </class> <!-- test.computer.BuyingCheapComputerTest -->
       <class name="test.BaseTest">
-        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-09T16:22:55 ICT" name="initBrowserSession" description="Init Browser Session" finished-at="2022-10-09T16:22:55 ICT" duration-ms="46" status="PASS">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-11T23:15:41 ICT" name="initBrowserSession" description="Init Browser Session" finished-at="2022-10-11T23:15:41 ICT" duration-ms="32" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -404,7 +722,7 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedExce
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowserSession -->
-        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-09T16:22:55 ICT" name="closeBrowserSession" finished-at="2022-10-09T16:22:55 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-11T23:15:41 ICT" name="closeBrowserSession" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserSession -->
