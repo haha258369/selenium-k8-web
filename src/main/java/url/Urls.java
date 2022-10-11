@@ -2,10 +2,10 @@ package url;
 
 public interface Urls {
 
-    String demoBaseUrl = "https://demowebshop.tricentis.com";
+//    String demoBaseUrl = "https://demowebshop.tricentis.com";
 
     // Used by Jenkins
-//    String demoBaseUrl = System.getProperty("baseUrl");
+    String demoBaseUrl = System.getProperty("baseUrl");
     String baseUrl = "https://the-internet.herokuapp.com";
     String cheapComputer = "/build-your-cheap-own-computer";
     String standardComputer = "/build-your-own-computer";

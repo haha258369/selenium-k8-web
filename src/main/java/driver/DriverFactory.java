@@ -62,9 +62,9 @@ public class DriverFactory {
             }
 
             try {
-                String hub = "http://localhost:4444/wd/hub";
+//                String hub = "http://localhost:4444/wd/hub";
                 // Used by Jenkins
-//                String hub = System.getProperty("hub").concat("/wd/hub");
+                String hub = System.getProperty("hub").concat("/wd/hub");
                 driver = new RemoteWebDriver(new URL(hub), desiredCapabilities);
             } catch (Exception e) {
                 e.printStackTrace();
