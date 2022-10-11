@@ -36,7 +36,7 @@ public class BuyingCheapComputerTest extends BaseTest implements Urls {
 
     @DataProvider
     public ComputerData[] computerData() {
-        String fileLocation = "/src/main/java/test/test_data/computer/CheapComputerData.json";
+        String fileLocation = "\\src\\main\\java\\test\\test_data\\computer\\CheapComputerData.json";
         return DataObjectBuilder.buildDataObjectFrom(fileLocation, ComputerData[].class);
     }
 }
