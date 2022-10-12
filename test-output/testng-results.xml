@@ -2,18 +2,18 @@
 <testng-results ignored="6" total="20" passed="3" failed="4" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-11T23:15:41 ICT" name="Regression" finished-at="2022-10-11T23:15:41 ICT" duration-ms="353">
+  <suite started-at="2022-10-12T12:02:53 ICT" name="Regression" finished-at="2022-10-12T12:02:54 ICT" duration-ms="491">
     <groups>
     </groups>
-    <test started-at="2022-10-11T23:15:41 ICT" name="Group 2" finished-at="2022-10-11T23:15:41 ICT" duration-ms="28">
-    </test> <!-- Group 2 -->
-    <test started-at="2022-10-11T23:15:41 ICT" name="Group 4" finished-at="2022-10-11T23:15:41 ICT" duration-ms="27">
-    </test> <!-- Group 4 -->
-    <test started-at="2022-10-11T23:15:41 ICT" name="Group 3" finished-at="2022-10-11T23:15:41 ICT" duration-ms="26">
+    <test started-at="2022-10-12T12:02:53 ICT" name="Group 3" finished-at="2022-10-12T12:02:53 ICT" duration-ms="43">
     </test> <!-- Group 3 -->
-    <test started-at="2022-10-11T23:15:41 ICT" name="Group 1" finished-at="2022-10-11T23:15:41 ICT" duration-ms="353">
+    <test started-at="2022-10-12T12:02:53 ICT" name="Group 4" finished-at="2022-10-12T12:02:53 ICT" duration-ms="50">
+    </test> <!-- Group 4 -->
+    <test started-at="2022-10-12T12:02:53 ICT" name="Group 2" finished-at="2022-10-12T12:02:53 ICT" duration-ms="52">
+    </test> <!-- Group 2 -->
+    <test started-at="2022-10-12T12:02:53 ICT" name="Group 1" finished-at="2022-10-12T12:02:54 ICT" duration-ms="491">
       <class name="test.global.footer.FooterTest">
-        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterCategoryPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
+        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="testFooterCategoryPage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="2" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -52,7 +52,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterCategoryPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterHomePage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterHomePage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testFooterHomePage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="testFooterHomePage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -145,11 +145,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterHomePage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterLoginPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="testFooterLoginPage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -192,11 +192,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterLoginPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="testFooterRegisterPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="testFooterRegisterPage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[null is not supported!]]>
@@ -239,25 +239,25 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterRegisterPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.global.footer.FooterTest@61386958]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
       </class> <!-- test.global.footer.FooterTest -->
       <class name="test.global.footer.FooterTestByTestNG">
-        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterLoginPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="PASS">
+        <test-method signature="testFooterLoginPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-12T12:02:54 ICT" name="testFooterLoginPage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterLoginPage -->
-        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterRegisterPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="PASS">
+        <test-method signature="testFooterRegisterPage()[pri:0, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-12T12:02:54 ICT" name="testFooterRegisterPage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterRegisterPage -->
-        <test-method signature="testFooterCategoryPage()[pri:1, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterCategoryPage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="6" status="PASS">
+        <test-method signature="testFooterCategoryPage()[pri:1, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-12T12:02:54 ICT" name="testFooterCategoryPage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFooterCategoryPage -->
-        <test-method signature="testFooterHomePage()[pri:2, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-11T23:15:41 ICT" name="testFooterHomePage" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
+        <test-method signature="testFooterHomePage()[pri:2, instance:test.global.footer.FooterTestByTestNG@73ee04c8]" started-at="2022-10-12T12:02:54 ICT" name="testFooterHomePage" finished-at="2022-10-12T12:02:54 ICT" duration-ms="2" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[[ERR] They are different! expected [true] but found [false]]]>
@@ -299,7 +299,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
         </test-method> <!-- testFooterHomePage -->
       </class> <!-- test.global.footer.FooterTestByTestNG -->
       <class name="test.computer.BuyingStandardComputerTest">
-        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
+        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-12T12:02:54 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-12T12:02:54 ICT" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -345,7 +345,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingStandardComputer -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -395,7 +395,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-12T12:02:54 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -445,11 +445,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingStandardComputer -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testBuyingStandardComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-12T12:02:54 ICT" name="testBuyingStandardComputer" data-provider="computerData" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -499,13 +499,13 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingStandardComputer -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingStandardComputerTest@2e222612]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
       </class> <!-- test.computer.BuyingStandardComputerTest -->
       <class name="test.computer.BuyingCheapComputerTest">
-        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="82" status="FAIL">
+        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-12T12:02:53 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-12T12:02:54 ICT" duration-ms="105" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -551,7 +551,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingCheapComputer -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="2" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -601,7 +601,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-12T12:02:54 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -651,11 +651,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingCheapComputer -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testBuyingCheapComputer(test.test_data.computer.ComputerData)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-12T12:02:54 ICT" name="testBuyingCheapComputer" data-provider="computerData" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -705,13 +705,13 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyingCheapComputer -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-11T23:15:41 ICT" name="captureScreenshot" finished-at="2022-10-11T23:15:41 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.computer.BuyingCheapComputerTest@3246fb96]" started-at="2022-10-12T12:02:54 ICT" name="captureScreenshot" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
       </class> <!-- test.computer.BuyingCheapComputerTest -->
       <class name="test.BaseTest">
-        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-11T23:15:41 ICT" name="initBrowserSession" description="Init Browser Session" finished-at="2022-10-11T23:15:41 ICT" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-12T12:02:53 ICT" name="initBrowserSession" description="Init Browser Session" finished-at="2022-10-12T12:02:53 ICT" duration-ms="48" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -722,7 +722,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowserSession -->
-        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-11T23:15:41 ICT" name="closeBrowserSession" finished-at="2022-10-11T23:15:41 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.BaseTest@2892dae4]" started-at="2022-10-12T12:02:54 ICT" name="closeBrowserSession" finished-at="2022-10-12T12:02:54 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserSession -->

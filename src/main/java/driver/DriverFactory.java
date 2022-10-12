@@ -66,6 +66,7 @@ public class DriverFactory {
                 // Used by Jenkins
                 String hub = System.getProperty("hub").concat("/wd/hub");
                 driver = new RemoteWebDriver(new URL(hub), desiredCapabilities);
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
             } catch (Exception e) {
                 e.printStackTrace();
             }

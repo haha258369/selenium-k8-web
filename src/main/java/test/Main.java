@@ -34,7 +34,7 @@ public class Main {
         }
 
         try {
-
+            BrowserType.valueOf(browser);
         } catch (Exception e) {
             throw new IllegalArgumentException("[ERR] " + browser + " is not supported, " +
                     "we covered for " + Arrays.toString(BrowserType.values()));
